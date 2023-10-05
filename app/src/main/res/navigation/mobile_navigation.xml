@@ -13,13 +13,13 @@
 
     <fragment
         android:id="@+id/navigation_weight"
-        android:name="com.scullyapps.ezmacros.ui.dashboard.DashboardFragment"
+        android:name="com.scullyapps.ezmacros.ui.weight.WeightFragment"
         android:label="@string/title_weight"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_weight" />
 
     <fragment
         android:id="@+id/navigation_macros"
-        android:name="com.scullyapps.ezmacros.ui.notifications.NotificationsFragment"
+        android:name="com.scullyapps.ezmacros.ui.macros.MacrosFragment"
         android:label="@string/title_macros"
-        tools:layout="@layout/fragment_notifications" />
+        tools:layout="@layout/fragment_macros" />
 </navigation>

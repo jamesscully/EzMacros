@@ -1,13 +1,13 @@
-package com.scullyapps.ezmacros.ui.dashboard
+package com.scullyapps.ezmacros.ui.macros
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
-class DashboardViewModel : ViewModel() {
+class MacrosViewModel : ViewModel() {
 
     private val _text = MutableLiveData<String>().apply {
-        value = "This is dashboard Fragment"
+        value = "Macros Fragment"
     }
     val text: LiveData<String> = _text
 }
