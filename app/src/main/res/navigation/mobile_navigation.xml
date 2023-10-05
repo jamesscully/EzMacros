@@ -22,4 +22,10 @@
         android:name="com.scullyapps.ezmacros.ui.macros.MacrosFragment"
         android:label="@string/title_macros"
         tools:layout="@layout/fragment_macros" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.scullyapps.ezmacros.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_macros" />
 </navigation>
