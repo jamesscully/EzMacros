@@ -28,10 +28,6 @@ class WeightFragment : Fragment() {
         _binding = FragmentWeightBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
         return root
     }
 
