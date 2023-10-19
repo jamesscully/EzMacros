@@ -21,11 +21,20 @@
         android:id="@+id/navigation_macros"
         android:name="com.scullyapps.ezmacros.ui.macros.MacrosFragment"
         android:label="@string/title_macros"
-        tools:layout="@layout/fragment_macros" />
+        tools:layout="@layout/fragment_macros" >
+        <action
+            android:id="@+id/action_navigation_macros_to_enterMacrosFragment"
+            app:destination="@id/enterMacrosFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
         android:name="com.scullyapps.ezmacros.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_macros" />
+    <fragment
+        android:id="@+id/enterMacrosFragment"
+        android:name="com.scullyapps.ezmacros.ui.macros.EnterMacrosFragment"
+        android:label="fragment_enter_macros"
+        tools:layout="@layout/fragment_enter_macros" />
 </navigation>

@@ -7,6 +7,9 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.NavDirections
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.scullyapps.ezmacros.databinding.FragmentMacrosBinding
 
 class MacrosFragment : Fragment() {
@@ -27,6 +30,11 @@ class MacrosFragment : Fragment() {
 
         _binding = FragmentMacrosBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        binding.button2.setOnClickListener { b ->
+            val action = MacrosFragmentDirections.actionNavigationMacrosToEnterMacrosFragment()
+            b.findNavController().navigate(action)
+        }
 
         return root
     }

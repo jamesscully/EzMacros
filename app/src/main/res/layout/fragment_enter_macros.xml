@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.macros.EnterMacrosFragment"
-    android:id="@+id/frameLayout">
+    tools:context=".ui.macros.EnterMacrosFragment">
 
     <TextView
         android:id="@+id/textView8"

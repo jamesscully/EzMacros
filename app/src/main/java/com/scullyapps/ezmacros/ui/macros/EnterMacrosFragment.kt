@@ -7,26 +7,28 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.scullyapps.ezmacros.R
+import com.scullyapps.ezmacros.databinding.FragmentEnterMacrosBinding
 
 class EnterMacrosFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = EnterMacrosFragment()
-    }
-
     private lateinit var viewModel: EnterMacrosViewModel
 
+    private var _binding: FragmentEnterMacrosBinding? = null
+
+    private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_enter_macros, container, false)
+    ): View {
+
+        _binding = FragmentEnterMacrosBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+        return root
     }
 
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-        viewModel = ViewModelProvider(this).get(EnterMacrosViewModel::class.java)
-        // TODO: Use the ViewModel
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
-
 }
