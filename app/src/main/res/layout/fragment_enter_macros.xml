@@ -29,14 +29,14 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/lblEnterMacroName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="Name (optional)" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/editTextName"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -54,14 +54,14 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/lblEnterMacroCalories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="Calories" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/editNumCalories"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -79,14 +79,14 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/lblEnterMacroProtein"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="Protein" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/editNumProtein"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -104,14 +104,14 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/textView10"
+                android:id="@+id/lblEnterMacroCarbs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="Carbohydrates" />
 
             <EditText
-                android:id="@+id/editTextNumber3"
+                android:id="@+id/editNumCarbs"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -128,14 +128,14 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/lblEnterMacroFat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="Fat" />
 
             <EditText
-                android:id="@+id/editTextNumber4"
+                android:id="@+id/editNumFat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
@@ -152,15 +152,15 @@
             android:gravity="center_vertical">
 
             <TextView
-                android:id="@+id/textView12"
+                android:id="@+id/lblEnterMacroFatUnsaturated"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="16dp"
+                android:layout_marginEnd="16dp"
                 android:text="saturated"
                 android:textStyle="italic" />
 
             <EditText
-                android:id="@+id/editTextNumber5"
+                android:id="@+id/editNumFatSaturated"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
