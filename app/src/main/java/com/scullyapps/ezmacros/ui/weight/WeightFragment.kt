@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.scullyapps.ezmacros.databinding.FragmentWeightBinding
 
 class WeightFragment : Fragment() {
@@ -27,6 +28,11 @@ class WeightFragment : Fragment() {
 
         _binding = FragmentWeightBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        binding.button.setOnClickListener {
+            val action = WeightFragmentDirections.actionNavigationWeightToEnterWeightFragment()
+            this.findNavController().navigate(action)
+        }
 
         return root
     }

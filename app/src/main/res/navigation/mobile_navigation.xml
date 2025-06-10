@@ -15,7 +15,11 @@
         android:id="@+id/navigation_weight"
         android:name="com.scullyapps.ezmacros.ui.weight.WeightFragment"
         android:label="@string/title_weight"
-        tools:layout="@layout/fragment_weight" />
+        tools:layout="@layout/fragment_weight" >
+        <action
+            android:id="@+id/action_navigation_weight_to_enterWeightFragment"
+            app:destination="@id/enterWeightFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_macros"
@@ -38,4 +42,12 @@
         android:name="com.scullyapps.ezmacros.ui.macros.EnterMacrosFragment"
         android:label="fragment_enter_macros"
         tools:layout="@layout/fragment_enter_macros" />
+
+    <fragment
+        android:id="@+id/enterWeightFragment"
+        android:name="com.scullyapps.ezmacros.ui.weight.EnterWeightFragment"
+        android:label="fragment_enter_macros"
+        tools:layout="@layout/fragment_enter_macros" />
+
+
 </navigation>

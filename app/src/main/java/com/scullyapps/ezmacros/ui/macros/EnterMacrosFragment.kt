@@ -15,8 +15,6 @@ class EnterMacrosFragment : Fragment() {
 
     private var _binding: FragmentEnterMacrosBinding? = null
 
-
-
     private val binding get() = _binding!!
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -25,8 +23,6 @@ class EnterMacrosFragment : Fragment() {
 
         _binding = FragmentEnterMacrosBinding.inflate(inflater, container, false)
         val root: View = binding.root
-
-
 
         return root
     }
