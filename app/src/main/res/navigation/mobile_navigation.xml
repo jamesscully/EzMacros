@@ -32,6 +32,7 @@
         android:name="com.scullyapps.ezmacros.ui.profile.ProfileFragment"
         android:label="@string/title_profile"
         tools:layout="@layout/fragment_macros" />
+
     <fragment
         android:id="@+id/enterMacrosFragment"
         android:name="com.scullyapps.ezmacros.ui.macros.EnterMacrosFragment"
