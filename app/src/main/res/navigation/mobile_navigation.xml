@@ -46,8 +46,8 @@
     <fragment
         android:id="@+id/enterWeightFragment"
         android:name="com.scullyapps.ezmacros.ui.weight.EnterWeightFragment"
-        android:label="fragment_enter_macros"
-        tools:layout="@layout/fragment_enter_macros" />
+        android:label="@string/title_enter_weight"
+        tools:layout="@layout/fragment_enter_weight" />
 
 
 </navigation>

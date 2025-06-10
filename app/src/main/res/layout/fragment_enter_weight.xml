@@ -35,7 +35,6 @@
             android:layout_weight="0"
             android:checked="true"
             android:showText="true"
-            android:switchMinWidth="50px"
             android:text="Unit"
             android:textOff="LB"
             android:textOn="KG"
@@ -57,7 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="numberSigned" />
+            android:inputType="number|numberDecimal|numberSigned" />
 
         <TextView
             android:id="@+id/lbl_weight_unit_display"
