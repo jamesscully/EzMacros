@@ -9,11 +9,10 @@ import kotlinx.coroutines.flow.asStateFlow
 
 data class EnterWeightFragmentUiState(
     var weight : Double = 0.0,
-    var unitType : Boolean = false
+    var unitType : Boolean = true
 )
 
 class EnterWeightViewModel : ViewModel() {
-    // TODO: Implement the ViewModel
 
     private val _uiState = MutableStateFlow(EnterWeightFragmentUiState())
     val uiState : StateFlow<EnterWeightFragmentUiState> = _uiState.asStateFlow()
